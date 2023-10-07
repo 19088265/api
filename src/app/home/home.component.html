@@ -1,0 +1,136 @@
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Montserrat:wght@100;200&family=Playfair+Display&display=swap" rel="stylesheet">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #CEBBA0;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" id="coca">
+      <img src="/assets/images/coding.png" id="logo" alt="" width="30" height="24" class="d-inline-block align-text-top">
+      COCA CODER</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      </ul>
+      <span class="navbar-text">
+        <a class="nav-link" href="#s2" (click)="fetti()">About</a>
+      </span>
+      <span class="navbar-text">
+        <a class="nav-link" href="#s2"  (click)="fetti()">Services</a>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <section>
+    <h3 id="hello">Hello!</h3>
+    <h1 id="intro">I am a Full Stack Software Engineer</h1>
+    <h3 id="intro2">specializing in complex creativity</h3>
+    <button mat-raised-button id="btnContact">Contact me</button>
+
+
+    <mat-divider id="div1"></mat-divider>
+
+    <div id="contactRow">
+      <div class="column">
+        <h5 id="contactsLabel">
+          <img src="/assets/images/email.gif" id="" alt="" width="22" height="22"> Email:</h5>
+        <h5 id="contacts">codercoca@gmail.com</h5>
+      </div>
+      <div class="column">
+        <h5 id="contactsLabel"><img src="/assets/images/phone.gif" id="" alt="" width="22" height="22"> Phone:</h5>
+        <h5 id="contacts">071 232 8118</h5>
+      </div>
+      <div class="column">
+        <h5 id="contactsLabel"><img src="/assets/images/chat.gif" id="" alt="" width="22" height="22"> Whatsapp:</h5>
+        <h5 id="contacts">073 255 1527</h5>
+      </div>
+    </div>
+    </section>
+
+
+
+    <section id="s2">
+
+      <div id="aboutTitle">
+        <h3 ><h3 id="hide">.</h3><img src="/assets/images/about.jpg" id="aboutImage" alt="" width="400" height="300"></h3>
+        <h4 id="question">Who am I? <img *ngIf="showFetti" src="/assets/images/code.gif" id="brate" alt="" width="25" height="25"></h4>
+        <h2 id="who">I'm Gontse Setlaleleng, a UI/UX Designer and Software Engineer</h2>
+        <p id="bio">I create seamless and innovative web and mobile applications, bridging the gap between user-friendly interfaces and robust back-end systems.
+         Furthermore, I am a coding enthusiast and tech thought leader dedicated to bringing ideas to life through lines of code.
+        </p>
+
+        <mat-divider id="div2"></mat-divider>
+
+        <mat-expansion-panel hideToggle id="downloadCV">
+          <mat-expansion-panel-header>
+            <mat-panel-title id="downloadTitle">
+              Download CV
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p id="note">Contact me for my resume.</p>
+        </mat-expansion-panel>
+
+      </div>
+
+      <div id="services">
+        <h2 id="servFront">My services
+          <mat-divider id="div4"></mat-divider>
+        </h2>
+
+        <div id="cardRow">
+          <div class="column2">
+            <mat-card class="card">
+              <mat-card-header>
+                <mat-card-subtitle><img src="/assets/images/internet.png" id="logoCard" alt="" width="40" height="45"></mat-card-subtitle>
+                <mat-card-title>Website development</mat-card-title>
+              </mat-card-header>
+              <mat-divider id="cardDiv"></mat-divider>
+              <mat-card-content>
+                <p id="des">Creating internet-based applications, focusing on both the front-end user interface and the back-end server logic.</p>
+
+              </mat-card-content>
+
+            </mat-card>
+          </div>
+
+          <div class="column2">
+            <mat-card class="card">
+              <mat-card-header>
+                <mat-card-subtitle><img src="/assets/images/test.png" id="logoCard" alt="" width="40" height="45"></mat-card-subtitle>
+                <mat-card-title>App development</mat-card-title>
+              </mat-card-header>
+              <mat-divider id="cardDiv"></mat-divider>
+              <mat-card-content>
+                <p id="des">Building mobile applications for various platforms, concentrating on designing user-friendly interfaces.</p>
+                <br>
+
+              </mat-card-content>
+
+            </mat-card>
+          </div>
+
+          <div class="column2">
+            <mat-card class="card">
+              <mat-card-header>
+                <mat-card-subtitle><img src="/assets/images/design.png" id="logoCard" alt="" width="40" height="45"></mat-card-subtitle>
+                <mat-card-title>UI/UX Design</mat-card-title>
+              </mat-card-header>
+              <mat-divider id="cardDiv"></mat-divider>
+              <mat-card-content>
+                <p id="des">Crafting visually appealing and user-friendly digital interfaces and ensuring a smooth and satisfying user experience.</p>
+
+              </mat-card-content>
+            </mat-card>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </section>
+
+</main>
